@@ -1,7 +1,6 @@
 "use client";
 import { navVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -13,21 +12,19 @@ const Navbar = () => {
     >
       <div className=" absolute w-[50%] inset-0 gradient-01" />
       <div className="innerWidth mx-auto flex justify-between gap-8">
-        <Image
+        <motion.img
+          whileHover={{ scale: 1.2 }}
           src="/search.svg"
           alt="search"
-          width={24}
-          height={24}
           className="w-[24px] h-[24px] object-contain"
         />
         <h2 className="font-extrabold text-[24px] leading-[30px] text-white uppercase">
           Metaversus
         </h2>
-        <Image
+        <motion.img
+          whileHover={{ scale: 1.2 }}
           src="/menu.svg"
           alt="menu"
-          width={24}
-          height={24}
           className=" w-[24px] h-[24px] object-contain"
         />
       </div>

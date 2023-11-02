@@ -41,15 +41,16 @@ const InsightCard = ({
         </p>
       </div>
 
-      <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
-        <Image
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
+      >
+        <img
           src="/arrow.svg"
           alt="arrow"
-          width={40}
-          height={40}
           className="w-[40%] h-[40%] object-contain"
         />
-      </div>
+      </motion.div>
     </div>
   </motion.div>
 );

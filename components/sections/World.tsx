@@ -41,35 +41,26 @@ const World = () => (
           className="w-full h-full object-cover"
         />
 
-        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <Image
-            width={60}
-            height={60}
-            src="/people-01.png"
-            alt="people"
-            className="w-full h-full"
-          />
-        </div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          className="absolute bottom-20 right-20 w-[70px] transition-all duration-300 h-[70px] p-[6px] rounded-full bg-[#5D6680]"
+        >
+          <img src="/people-01.png" alt="people" className="w-full h-full" />
+        </motion.div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <Image
-            width={60}
-            height={60}
-            src="/people-02.png"
-            alt="people"
-            className="w-full h-full"
-          />
-        </div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          className="absolute top-10 left-20 w-[70px] transition-all duration-300 h-[70px] p-[6px] rounded-full bg-[#5D6680]"
+        >
+          <img src="/people-02.png" alt="people" className="w-full h-full" />
+        </motion.div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <Image
-            width={60}
-            height={60}
-            src="/people-03.png"
-            alt="people"
-            className="w-full h-full"
-          />
-        </div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          className="absolute top-1/2 transition-all duration-300 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]"
+        >
+          <img src="/people-03.png" alt="people" className="w-full h-full" />
+        </motion.div>
       </motion.div>
     </motion.div>
   </section>

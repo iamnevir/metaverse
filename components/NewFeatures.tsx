@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const NewFeatures = ({
@@ -13,11 +14,10 @@ const NewFeatures = ({
 }) => (
   <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
     <div className={`flexCenter w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}>
-      <Image
+      <motion.img
+        whileHover={{ scale: 1.1 }}
         src={imgUrl}
         alt="icon"
-        width={35}
-        height={35}
         className="w-1/2 h-1/2 object-contain"
       />
     </div>

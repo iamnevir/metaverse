@@ -47,13 +47,12 @@ const Footer = () => (
 
           <div className="flex gap-4">
             {socials.map((social) => (
-              <Image
+              <motion.img
+                whileHover={{ scale: 1.2 }}
                 key={social.name}
                 src={social.url}
                 alt={social.name}
-                width={24}
-                height={24}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
+                className="w-[24px] h-[24px] object-contain cursor-pointer duration-500"
               />
             ))}
           </div>

@@ -12,7 +12,7 @@ import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className=" bg-primary-black overflow-hidden">
+    <div className=" bg-primary-black overflow-hidden scroll-smooth">
       <Navbar />
       <Hero />
       <div className="relative">

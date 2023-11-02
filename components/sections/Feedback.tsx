@@ -64,7 +64,7 @@ const Feedback = () => (
             height={155}
             src="/stamp.png"
             alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
+            style={{ objectFit: "contain" }}
           />
         </motion.div>
       </motion.div>
