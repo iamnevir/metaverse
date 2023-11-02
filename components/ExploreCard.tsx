@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../utils/motion";
 import { useState } from "react";
+import Image from "next/image";
 
 const ExploreCard = ({
   id,
@@ -35,9 +36,10 @@ const ExploreCard = ({
         isHovered ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
       } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[1s] ease-out-flex cursor-pointer`}
     >
-      <img
+      <Image
         src={imgUrl}
         alt="planet-04"
+        fill
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
       {!isHovered ? (
@@ -47,11 +49,13 @@ const ExploreCard = ({
       ) : (
         <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col duration-[1s] transition-[flex] bg-[rgba(0,0,0,0.5)] rounded-t-[24px] rounded-b-[24px]">
           <div
-            className={`flexCenter w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+            className={`flexCenter w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[23px]`}
           >
-            <img
+            <Image
               src="/headset.svg"
               alt="headset"
+              height={30}
+              width={30}
               className="w-1/2 h-1/2 object-contain"
             />
           </div>
